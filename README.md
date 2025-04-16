@@ -37,10 +37,12 @@ We reproduced the original paper's models and training pipelines using **PyTorch
 ```bash
 .
 ├── models/                # BaselineModel, NAFNetModel
-├── utils/                 # Metrics, loss function, dataset loader, patching tools
-├── train.py               # Main training script (model + dataset args)
-├── test.py                # Main evaluation script (model + dataset args)
+├── notebooks/             # Jupyter notebooks for exploration
+├── utils/                 # Helper functions: metrics, dataset loader, patcher
+├── weights/               # Pretrained model weights
 ├── gopro_preprocess.py    # Extract & patch GoPro dataset
 ├── sidd_preprocess.py     # Extract & patch SIDD dataset
+├── train.py               # Main training script 
+├── test.py                # Main testing script
 ├── requirements.txt
 └── README.md
