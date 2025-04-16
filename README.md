@@ -54,11 +54,35 @@ We reproduced the original paper's models and training pipelines using **PyTorch
  - Python 3.11.0
  - CUDA 12.6 drivers (for GPU acceleration)
 
+1. Dependencies:
+   
  ```bash
  pip install -r requirements.txt
-```
+ ```
+ This project uses PyTorch with GPU (CUDA 12.6). If you want to use the GPU version, install it using the following command:
+ ```bash
+ pip install torch==2.6.0+cu126 torchvision==0.21.0+cu126 --index-url https://download.pytorch.org/whl/cu126
+ ```
 
- If you plan to use the GPU version of PyTorch, install it with:
- ```pip install torch==2.6.0+cu126 torchvision==0.21.0+cu126 --index-url https://download.pytorch.org/whl/cu126```
+2. Data Preprocessing:
+   - Download the [**GoPro Train Set**](https://drive.google.com/file/d/1zgALzrLCC_tcXKu_iHQTHukKUVT1aodI/view) and place it in the following directory:
+  ```./datasets/GoPro/train/```
+   - Download the [**GoPro Test Set**](https://drive.google.com/file/d/1abXSfeRGrzj2mQ2n2vIBHtObU6vXvr7C/view), then move ```input.lmdb``` and ```target.lmdb``` files to the following directory:
+  ```./datasets/GoPro/test/```
+   - Run the following command:
+     ```bash
+     python gopro_preprocess.py
+     ```
+
+     - Download the [**SIDD Train Set**](https://drive.google.com/file/d/1UHjWZzLPGweA9ZczmV8lFSRcIxqiOVJw/view) and place it in the following directory:
+  ```./datasets/SIDD/train/```
+   - Download the [**SIDD Test Set**](https://drive.google.com/file/d/1gZx_K2vmiHalRNOb1aj93KuUQ2guOlLp/view), then move ```input_crops.lmdb``` and ```gt_crops.lmdb``` files to the following directory:
+  ```./datasets/SIDD/test/```
+   - Run the following command:
+     ```bash
+     python sidd_preprocess.py
+     ```
+
+
 
  
