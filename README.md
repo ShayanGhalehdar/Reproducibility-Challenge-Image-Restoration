@@ -127,6 +127,3 @@ We reproduced the original paper's models and training pipelines using **PyTorch
      python test.py --model NAFNet --dataset SIDD
      ```
 
-## 📄 License
-
-This project is intended for academic use only. Refer to the original paper and dataset terms for licensing details.
