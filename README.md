@@ -50,7 +50,13 @@ We reproduced the original paper's models and training pipelines using **PyTorch
 ---
 
  ## ✅ Instructions
- Make sure you have the following installed:
+ Make sure you have the following versions installed:
  - Python 3.11.0
  - CUDA 12.6 drivers (for GPU acceleration)
+
+ ```pip install -r requirements.txt```
+
+ If you plan to use the GPU version of PyTorch, install it with:
+ ```pip install torch==2.6.0+cu126 torchvision==0.21.0+cu126 --index-url https://download.pytorch.org/whl/cu126```
+
  
