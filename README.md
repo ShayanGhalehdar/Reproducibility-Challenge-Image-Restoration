@@ -16,13 +16,20 @@ With recent developments in Deep Learning and Computer Vision, **Image restorati
 
 We reproduced the original paper's models and training pipelines using **PyTorch**, and evaluated them on two public datasets:
 
-## (GoPro Dataset)
+## GoPro Dataset
 
-| Method | Baseline (Paper) | NAFNet (Paper) | Baseline (Ours) | NAFNet (Ours) |
+| Model  | Baseline (Paper) | NAFNet (Paper) | Baseline (Ours)  | NAFNet (Ours)  |
 |--------|------------------|----------------|------------------|----------------|
 | PSNR   | 33.40            | 33.69          | 30.29            | 30.83          |
 | SSIM   | 0.965            | 0.967          | 0.89             | 0.90           |
 
+
+## SIDD Dataset
+
+| Model  | Baseline (Paper) | NAFNet (Paper) | Baseline (Ours)  | NAFNet (Ours)  |
+|--------|------------------|----------------|------------------|----------------|
+| PSNR   | 40.30            | 40.30          | 39.24            | 39.32          |
+| SSIM   | 0.962            | 0.962          | 0.92             | 0.92           |
 ---
 
 ## ✅ Project Structure
