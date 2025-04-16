@@ -84,7 +84,7 @@ We reproduced the original paper's models and training pipelines using **PyTorch
      ```
 
  **3. Training:**
-     To train the models on each dataset, use the following commands:
+ - To train the models on each dataset, use the following commands:
      - Train **Baseline** model on **GoPro**:
      ```bash
      python train.py --model Baseline --dataset GoPro
@@ -105,6 +105,24 @@ We reproduced the original paper's models and training pipelines using **PyTorch
      python train.py --model NAFNet --dataset SIDD
      ```
 
+  **4. Testing:**
+  - To test the models on each dataset, use the following commands:
+     - Test **Baseline** model on **GoPro**:
+     ```bash
+     python test.py --model Baseline --dataset GoPro
+     ```
 
+     - Test **NAFNet** model on **GoPro**:
+     ```bash
+     python test.py --model NAFNet --dataset GoPro
+     ```
 
- 
+     - Test **Baseline** model on **SIDD**:
+     ```bash
+     python test.py --model Baseline --dataset SIDD
+     ```
+     
+     - Test **NAFNet** model on **SIDD**:
+     ```bash
+     python test.py --model NAFNet --dataset SIDD
+     ```
